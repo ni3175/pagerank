@@ -3,7 +3,7 @@ We used AWS Elastic MapReduce to perform a much larger-scale computation. Actual
 large Web graph (685230 TODO: nodes, 7600595 TODO: edges) 
 We have three different ways to calculate PageRank. 
 
-1. simple PageRank 
+1.simple PageRank 
 A Reduce task basically just updates the PageRank value for its node based on the PageRank values of the node’s immediate 
 neighbors.This direct approach took well over 20 Map Reduce passes to converge to the desired accuracy on our test graph.
 It’s not very efficient. 
